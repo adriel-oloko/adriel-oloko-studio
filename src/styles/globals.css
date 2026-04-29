@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+@plugin "@designbycode/tailwindcss-text-stroke";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+
+    --font-syne: var(--font-syne);
+    --font-dm-sans: var(--font-dm-sans);
+    --font-space-grotesk: var(--font-space-grotesk);
+    --font-bebas-neue: var(--font-bebas-neue);
+    --font-jet-brains-mono: var(--font-jet-brains-mono);
+    --font-inter: var(--font-inter);
+    --font-cormorant-garamond: var(--font-cormorant-garamond);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hjk {
+    background-image: url('../../public/17d60ba7b0ddafe97967bddc40f14ad2.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
