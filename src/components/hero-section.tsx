@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { ShieldCheck, RefreshCw, Zap, WandSparkles, Bitcoin, MenuIcon, StarIcon, XIcon } from 'lucide-react'
+import { MenuIcon, StarIcon, XIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import StatsBar from './StatsBar'
 import useIpAddress from '@/hooks/useIpAddress'
-import router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 
 const avatars = ['https://i.pravatar.cc/40?img=1', 'https://i.pravatar.cc/40?img=2', 'https://i.pravatar.cc/40?img=3', 'https://i.pravatar.cc/40?img=4', 'https://i.pravatar.cc/40?img=5']
 
@@ -29,7 +29,7 @@ export default function HeroSection() {
                         Premium
                         <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-2 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx.png")' }} />
                         Web Development <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">for</span>
-                        <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-4 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx (1).png")' }} /> businesses based in <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">{(city && region_code) == null ? `${city}, ${region_code}` : 'Tuscaloosa, AL'}.</span>
+                        <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-4 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx (1).png")' }} /> businesses based in <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white"> {city && region_code ? `${city}, ${region_code}` : 'Tuscaloosa, AL'}.</span>
                     </h2>
                 </motion.div>
                 <p className="text-center my-2 md:my-0 px-8 md:w-1/2">I build fast, professional websites for trade businesses and local companies. Clean design, real results, no fluff.</p>
