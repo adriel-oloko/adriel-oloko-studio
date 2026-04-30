@@ -17,7 +17,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="flex rounded-xs text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
+                            <a href="https://www.tiktok.com/@heisadriel" target="_blank" rel="noopener noreferrer" className="flex rounded-xs text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
                                 <svg key="tiktok" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" />
@@ -42,7 +42,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:contact@adrielolokostudio.com" target="_blank" rel="noopener noreferrer" className="flex rounded-xs text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
+                            <a href="mailto:adrielloks@gmail.com" target="_blank" rel="noopener noreferrer" className="flex rounded-xs text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
                                 <MailIcon size={20} />
                             </a>
                         </li>

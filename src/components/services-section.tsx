@@ -52,11 +52,11 @@ const headerVariants = {
 }
 
 const cardVariants = {
-    hidden: { opacity: 0, y: 28 },
+    hidden: { opacity: 0, y: 0 },
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] as const },
+        transition: { duration: 2 },
     },
 }
 
@@ -70,13 +70,13 @@ export default function ServicesSection() {
             <div className="mx-auto relative">
                 {/* Header */}
                 <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="mb-14">
-                    <motion.p variants={headerVariants} className="text-xs tracking-widest uppercase text-stone-400 mb-3 font-jet-brains-mono">
+                    <motion.p variants={headerVariants} viewport={{ once: true, margin: '-40px' }} className="text-xs tracking-widest uppercase text-stone-400 mb-3 font-jet-brains-mono">
                         Services
                     </motion.p>
-                    <motion.h2 variants={headerVariants} className="text-3xl sm:text-4xl md:text-5xl font-bold capitalize text-stone-100 leading-tight" style={{ fontFamily: 'var(--font-cormorant-garamond), serif' }}>
+                    <motion.h2 variants={headerVariants} viewport={{ once: true, margin: '-40px' }} className="text-3xl sm:text-4xl md:text-5xl font-bold capitalize text-stone-100 leading-tight" style={{ fontFamily: 'var(--font-cormorant-garamond), serif' }}>
                         What I can do for you
                     </motion.h2>
-                    <motion.p variants={headerVariants} className="mt-3 text-sm text-stone-400 max-w-sm leading-relaxed">
+                    <motion.p variants={headerVariants} viewport={{ once: true, margin: '-40px' }} className="mt-3 text-sm text-stone-400 max-w-sm leading-relaxed">
                         Clear services. Defined value. No guesswork about whether I am the right fit for your project.
                     </motion.p>
                 </motion.div>
@@ -84,7 +84,7 @@ export default function ServicesSection() {
                 {/* Cards */}
                 <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="grid md:grid-cols-2 gap-4 md:gap-8 xl:grid-cols-3">
                     {services.map((service) => (
-                        <motion.div key={service.index} variants={cardVariants} className="border border-stone-100 hover:border-stone-200 bg-white transition-all duration-300 p-6 rounded-md">
+                        <motion.div key={service.index} variants={cardVariants} viewport={{ once: true, margin: '-40px' }} initial="hidden" whileInView={'visible'} className="border border-stone-100 hover:border-stone-200 bg-white transition-all duration-300 p-6 rounded-md">
                             <div className="flex flex-col gap-7">
                                 {/* Left: index + title + tagline */}
                                 <div className="flex flex-col gap-2 shrink-0">

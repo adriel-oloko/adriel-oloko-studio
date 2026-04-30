@@ -154,8 +154,8 @@ export default function CTASection() {
                         <span className="text-xs text-white/25" style={{ fontFamily: 'var(--font-dm-sans)' }}>
                             Or reach me directly at
                         </span>
-                        <a href="mailto:hello@adrielolokostudio.com" className="text-xs text-white/50 hover:text-white/80 transition-colors duration-200 underline underline-offset-4 decoration-white/20 hover:decoration-white/50" style={{ fontFamily: 'var(--font-jet-brains-mono)' }}>
-                            hello@adrielolokostudio.com
+                        <a href="mailto:adrielloks@gmail.com" className="text-xs text-white/50 hover:text-white/80 transition-colors duration-200 underline underline-offset-4 decoration-white/20 hover:decoration-white/50" style={{ fontFamily: 'var(--font-jet-brains-mono)' }}>
+                            adrielloks@gmail.com
                         </a>
                     </motion.div>
                 </div>

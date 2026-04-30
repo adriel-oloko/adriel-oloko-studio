@@ -29,7 +29,7 @@ export default function HeroSection() {
                         <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-4 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx (1).png")' }} /> businesses based in <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">{(city && region_code) == null ? `${city}, ${region_code}` : 'Tuscaloosa, AL'}.</span>
                     </h2>
                 </motion.div>
-                <p className="text-center my-2 md:my-0 px-8 md:w-1/2">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.</p>
+                <p className="text-center my-2 md:my-0 px-8 md:w-1/2">I build fast, professional websites for trade businesses and local companies. Clean design, real results, no fluff.</p>
                 <div className="border-2 p-1 rounded-[14px] my-2">
                     <button className="bg-orange-500 w-fit px-4 py-1.5 rounded-lg mx-auto">Get Started</button>
                 </div>
@@ -72,15 +72,15 @@ export function NavBar() {
             <h2 className="font-cormorant-garamond text-xl font-semibold relative z-999">Adriel Oloko</h2>
             <div className="md:flex mx-auto font-jet-brains-mono items-center w-fit gap-8 hidden">
                 {navData[0].map(([text, link], index) => (
-                    <a key={index} href={link}>
+                    <a key={index} href={link} className='text-nowrap'>
                         {text}
                     </a>
                 ))}
             </div>
 
             <div className="hidden md:flex gap-4 items-center justify-end">
-                <a href="">FAQ</a>
-                <Link href={'#'} className="border-[1.5px] border-solid rounded-full px-3 py-1.5 text-sm">
+              
+                <Link href={'mailto:adrielloks@gmail.com'} className="border-[1.5px] min-w-fit max-w-fit border-solid rounded-full px-3 py-1.5 text-sm">
                     Contact Me
                 </Link>
             </div>
@@ -106,7 +106,6 @@ export function NavBar() {
                             </motion.button>
                         ))}
 
-                        
                         <motion.a initial={{ translateY: 12, opacity: 0 }} animate={{ translateY: 0, opacity: 1, transition: { delay: 0.2 } }} href="https://github.com/adriel-oloko" className="uppercase mt-4 ease-snappy">
                             / Github
                         </motion.a>
