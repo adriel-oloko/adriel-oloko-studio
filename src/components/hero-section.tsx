@@ -7,12 +7,12 @@ import StatsBar from './StatsBar'
 import useIpAddress from '@/hooks/useIpAddress'
 import { useRouter } from 'next/router'
 
-const avatars = ['https://i.pravatar.cc/40?img=1', 'https://i.pravatar.cc/40?img=2', 'https://i.pravatar.cc/40?img=3', 'https://i.pravatar.cc/40?img=4', 'https://i.pravatar.cc/40?img=5']
 
 export default function HeroSection() {
-    const { ip, city, region_code } = useIpAddress()
+    const { city, region_code } = useIpAddress()
+
     useEffect(() => {
-        console.log(city, region_code)
+        console.log(city, region_code, typeof city)
     }, [city, region_code])
 
     return (
@@ -29,7 +29,19 @@ export default function HeroSection() {
                         Premium
                         <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-2 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx.png")' }} />
                         Web Development <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">for</span>
-                        <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-4 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx (1).png")' }} /> businesses based in <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white"> {city && region_code ? `${city}, ${region_code}` : 'Tuscaloosa, AL'}.</span>
+                        <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-4 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx (1).png")' }} />{' '}
+                        {city && city !== 'Unknown' && region_code ? (
+                            <>
+                                businesses based in <br />
+                                <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">
+                                    {city}, {region_code}.
+                                </span>
+                            </>
+                        ) : (
+                            <>
+                                <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">ambitious</span> businesses, <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">worldwide.</span>
+                            </>
+                        )}
                     </h2>
                 </motion.div>
                 <p className="text-center my-2 md:my-0 px-8 md:w-1/2">I build fast, professional websites for trade businesses and local companies. Clean design, real results, no fluff.</p>
@@ -71,7 +83,7 @@ export function NavBar() {
         ],
     ]
     return (
-        <nav className="absolute top-0 inset-x-0 flex justify-between md:grid md:grid-cols-3 w-full items-center px-8 py-4 z-999">
+        <nav className="absolute top-0 inset-x-0 flex justify-between md:grid md:grid-cols-3 w-full items-center px-8 py-4 z-998">
             <h2 className="font-cormorant-garamond text-xl font-semibold relative z-999">Adriel Oloko</h2>
             <div className="md:flex mx-auto font-jet-brains-mono items-center w-fit gap-8 hidden">
                 {navData[0].map(([text, link], index) => (

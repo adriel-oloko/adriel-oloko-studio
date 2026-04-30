@@ -1,5 +1,5 @@
 import useIpStore from '@/store/useIpStore'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 interface IpResponse {
     ip: string
@@ -13,6 +13,7 @@ interface GeoResponse {
 }
 
 const useIpAddress = () => {
+    const [isLoading, setIsLoading] = useState<boolean>(true)
     // Access the store's current state and the setter function
     const ipData = useIpStore((state) => state.ip)
     const setIpStore = useIpStore((state) => state.setIp)
@@ -32,18 +33,21 @@ const useIpAddress = () => {
                     city: geoData.city || 'Unknown',
                     region_code: geoData.region_code || 'Unknown',
                 })
+                setIsLoading(false)
             })
             .catch((err) => {
                 console.error('Failed to set IP address info:', err)
                 setIpStore({}) // Reset to empty object on error
+                setIsLoading(false)
             })
-    }, []) // Added dependency for safety
+    }, [ipData.ip, setIpStore]) // Added dependency for safety
 
     // Return the data directly from the global store
     return {
         ip: ipData.ip,
         city: ipData.city,
         region_code: ipData.region_code,
+        isLoading: isLoading,
     }
 }
 

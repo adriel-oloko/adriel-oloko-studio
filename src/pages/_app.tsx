@@ -30,26 +30,24 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-    const finalUrl = 'https:/zurvia-studios.vercel.app'
+    const finalUrl = 'https:/adrielolokostudios.vercel.app'
     return (
         <>
             <Head>
-                <title>Zurvia Studios: Website Development Agency</title>
-                <meta name="description" content={"Secure your place in the night. Official ticket reservations for the Morgan Wallen Tour. Experience the 'One Thing At A Time' journey with exclusive PIT and VIP floor access."} />
+                <title>Adriel Oloko Studio | Web Design & Development Agency</title>
+                <meta name="description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
+
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content={'MORGAN WALLEN: Still the Problem Tour'} />
-                <meta property="og:description" content={"Secure your place in the night. Official ticket reservations for the Morgan Wallen Tour. Experience the 'One Thing At A Time' journey with exclusive PIT and VIP floor access."} />
-
-                {/* Fixed: Pointing to your dynamic OG API route */}
+                <meta property="og:title" content="Adriel Oloko Studio | Web Design & Development Agency" />
+                <meta property="og:description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
                 <meta property="og:image" content={`${finalUrl}/api/og`} />
                 <meta property="og:url" content={finalUrl} />
 
                 {/* Twitter/X Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content={'MORGAN WALLEN: Still the Problem Tour'} />
-                <meta name="twitter:description" content="Secure your place in the night. Official ticket reservations for the Morgan Wallen Tour. Experience the 'One Thing At A Time' journey with exclusive PIT and VIP floor access." />
-                {/* Fixed: Use config.ogImage or the API route */}
+                <meta name="twitter:title" content="Adriel Oloko Studio | Web Design & Development Agency" />
+                <meta name="twitter:description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
                 <meta name="twitter:image" content={`${finalUrl}/api/og`} />
             </Head>
 
