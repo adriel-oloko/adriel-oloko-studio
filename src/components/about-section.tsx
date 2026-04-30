@@ -5,7 +5,7 @@ import { fadeIn, scaleIn } from '@/animations/animations'
 
 export default function AboutSection() {
     return (
-        <div className="bg-white rounded-t-3xl -mt-12 md:mt-0 relative w-full p-4 grid md:grid-cols-2 gap-4">
+        <div id="about" className="bg-white rounded-t-3xl -mt-12 md:mt-0 relative w-full p-4 grid md:grid-cols-2 gap-4">
             <motion.div variants={fadeIn} initial="hidden" whileInView={'show'} viewport={{ once: true, margin: '-40px' }} className="h-full relative">
                 <Image src={'/Gemini_Generated_Image_b1qk0cb1qk0cb1qk.png'} className="aspect-square md:aspect-auto object-cover object-center xl:object-[100%_25%] rounded-2xl h-fit max-h-full md:absolute" width={806} height={1075} alt="Founder of the agency at work" />
                 <motion.div variants={scaleIn} initial="hidden" whileInView="show" viewport={{ once: true, margin: '-40px' }} className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm text-white rounded-xl px-4 py-3 flex items-center gap-3">

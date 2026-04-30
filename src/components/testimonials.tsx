@@ -55,7 +55,7 @@ export default function Testimonials() {
     const current = testimonials[index]
 
     return (
-        <section className="relative bg-[#f5f0eb] min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden">
+        <section id='testimonials' className="relative bg-[#f5f0eb] min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden">
             {/* Decorative grain overlay */}
             <div
                 className="pointer-events-none absolute inset-0 opacity-30"

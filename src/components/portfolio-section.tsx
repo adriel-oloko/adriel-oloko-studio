@@ -74,7 +74,7 @@ export default function PortfolioSection() {
     const inView = useInView(ref, { once: true, margin: '-80px' })
 
     return (
-        <section ref={ref} className="w-full bg-gray-50 py-24 px-6 md:px-12 lg:px-20" style={{ fontFamily: 'var(--font-dm-sans)' }}>
+        <section id='projects' ref={ref} className="w-full bg-gray-50 py-24 px-6 md:px-12 lg:px-20" style={{ fontFamily: 'var(--font-dm-sans)' }}>
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="flex flex-col gap-0 mb-16">

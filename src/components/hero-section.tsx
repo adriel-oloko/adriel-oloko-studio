@@ -7,7 +7,6 @@ import StatsBar from './StatsBar'
 import useIpAddress from '@/hooks/useIpAddress'
 import { useRouter } from 'next/router'
 
-
 export default function HeroSection() {
     const { city, region_code } = useIpAddress()
 
@@ -76,10 +75,10 @@ export function NavBar() {
     const [isMenu, setIsMenu] = useState(false)
     const navData = [
         [
-            ['About', ''],
-            ['Our Services', ''],
-            ['Projects', ''],
-            ['Testimonial', ''],
+            ['About', '#about'],
+            ['Our Services', '#our-services'],
+            ['Projects', '#projects'],
+            ['Testimonial', '#testimonials'],
         ],
     ]
     return (

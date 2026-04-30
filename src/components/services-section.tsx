@@ -65,7 +65,7 @@ export default function ServicesSection() {
     const inView = useInView(ref, { once: true, margin: '-80px' })
 
     return (
-        <section ref={ref} className="hjk relative bg-fixed bg-gray-50 py-24 px-8 font-dm-sans">
+        <section id='our-services' ref={ref} className="hjk relative bg-fixed bg-gray-50 py-24 px-8 font-dm-sans">
             <div className="absolute inset-0 backdrop-blur-xl w-full" />
             <div className="mx-auto relative">
                 {/* Header */}
