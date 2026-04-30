@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ShieldCheck, RefreshCw, Zap, WandSparkles, Bitcoin, MenuIcon, StarIcon, XIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import StatsBar from './StatsBar'
 import useIpAddress from '@/hooks/useIpAddress'
 import router, { useRouter } from 'next/router'
@@ -11,6 +11,9 @@ const avatars = ['https://i.pravatar.cc/40?img=1', 'https://i.pravatar.cc/40?img
 
 export default function HeroSection() {
     const { ip, city, region_code } = useIpAddress()
+    useEffect(() => {
+        console.log(city, region_code)
+    }, [city, region_code])
 
     return (
         <section id="hjk" className="hjk bg-fixed w-full min-h-svh md:min-h-screen relative flex items-center justify-center bg-black px-4">
@@ -72,14 +75,13 @@ export function NavBar() {
             <h2 className="font-cormorant-garamond text-xl font-semibold relative z-999">Adriel Oloko</h2>
             <div className="md:flex mx-auto font-jet-brains-mono items-center w-fit gap-8 hidden">
                 {navData[0].map(([text, link], index) => (
-                    <a key={index} href={link} className='text-nowrap'>
+                    <a key={index} href={link} className="text-nowrap">
                         {text}
                     </a>
                 ))}
             </div>
 
             <div className="hidden md:flex gap-4 items-center justify-end">
-              
                 <Link href={'mailto:adrielloks@gmail.com'} className="border-[1.5px] min-w-fit max-w-fit border-solid rounded-full px-3 py-1.5 text-sm">
                     Contact Me
                 </Link>

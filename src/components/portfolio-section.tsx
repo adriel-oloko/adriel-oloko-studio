@@ -112,7 +112,7 @@ export default function PortfolioSection() {
                 {/* Footer note */}
                 <motion.div variants={headingVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="mt-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8 border-t border-stone-100">
                     <p className="text-sm text-stone-400">Full case studies available on request.</p>
-                    <a href="mailto:adrielloks" className="text-sm font-medium text-stone-900 underline underline-offset-4 hover:text-stone-600 transition-colors">
+                    <a href="mailto:adrielloks@gmail.com" className="text-sm font-medium text-stone-900 underline underline-offset-4 hover:text-stone-600 transition-colors">
                         Discuss your project
                     </a>
                 </motion.div>
