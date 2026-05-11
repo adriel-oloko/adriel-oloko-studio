@@ -74,7 +74,7 @@ export default function PortfolioSection() {
     const inView = useInView(ref, { once: true, margin: '-80px' })
 
     return (
-        <section id='projects' ref={ref} className="w-full bg-gray-50 py-24 px-6 md:px-12 lg:px-20" style={{ fontFamily: 'var(--font-dm-sans)' }}>
+        <section id="projects" ref={ref} className="w-full bg-gray-50 py-24 px-6 md:px-12 lg:px-20" style={{ fontFamily: 'var(--font-dm-sans)' }}>
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="flex flex-col gap-0 mb-16">
@@ -97,7 +97,7 @@ export default function PortfolioSection() {
                 <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {projects.map((project) => (
                         <motion.div key={project.index} variants={cardVariants} className="group border border-stone-100 rounded-md overflow-hidden transition-colors duration-300 flex flex-col gap-4">
-                            <Image src={'/' + project.image} className="rounded-md" width={1200} height={630} alt="" />
+                            <Image src={'/' + project.image} className="rounded-t-md" width={1200} height={630} alt="" />
                             <div className="text-black flex flex-col gap-2 p-4 pt-0">
                                 <h3 className="font-cormorant-garamond text-2xl font-semibold">{project.name}</h3>
                                 <p className="text-sm">{project.summary}</p>

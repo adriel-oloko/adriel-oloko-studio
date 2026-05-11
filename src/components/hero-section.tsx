@@ -82,7 +82,7 @@ export function NavBar() {
         ],
     ]
     return (
-        <nav className="absolute top-0 inset-x-0 flex justify-between md:grid md:grid-cols-3 w-full items-center px-8 py-4 z-998">
+        <nav className="absolute top-0 inset-x-0 text-white flex justify-between md:grid md:grid-cols-3 w-full items-center px-8 py-4 z-998">
             <h2 className="font-cormorant-garamond text-xl font-semibold relative z-999">Adriel Oloko</h2>
             <div className="md:flex mx-auto font-jet-brains-mono items-center w-fit gap-8 hidden">
                 {navData[0].map(([text, link], index) => (
