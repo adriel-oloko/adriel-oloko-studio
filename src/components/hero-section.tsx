@@ -43,9 +43,9 @@ export default function HeroSection() {
                         )}
                     </h2>
                 </motion.div>
-                <p className="text-center my-2 md:my-0 px-8 md:w-1/2">I build fast, professional websites for trade businesses and local companies. Clean design, real results, no fluff.</p>
-                <div className="border-2 p-1 rounded-[14px] my-2">
-                    <button className="bg-orange-500 w-fit px-4 py-1.5 rounded-lg mx-auto">Get Started</button>
+                <p className="text-center my-2 md:my-0 px-8 md:w-1/2 text-white">I build fast, professional websites for trade businesses and local companies. Clean design, real results, no fluff.</p>
+                <div className="border-2 p-1 rounded-[14px] my-2 border-white">
+                    <button className="bg-orange-500 w-fit px-4 py-1.5 rounded-lg mx-auto text-white">Get Started</button>
                 </div>
                 <div className="hidden grid-cols-2 mx-auto w-fit gap-4 mt-8 md:mt-4">
                     <div className="flex -space-x-3 justify-end border-r pr-4">

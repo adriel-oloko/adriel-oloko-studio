@@ -5,11 +5,11 @@ const services = [
     {
         index: '01',
         title: 'Website Development',
-        tagline: 'Built to perform. Designed to convert.',
-        description: 'I build fast, responsive websites tailored to your brand and business goals. From single landing pages to full multi-page builds, every line of code is intentional.',
-        outcome: 'A site that loads in under 2 seconds, looks sharp on every screen, and turns visitors into clients.',
-        tags: ['Next.js', 'React', 'TailwindCSS', 'Responsive'],
-        from: 'From $500',
+        tagline: 'Not a brochure. A business tool that works while you sleep.',
+        description: 'I build fast, responsive websites that use AI to handle customer enquiries, qualify leads, and respond after hours. Before going independent, I ran the web and design department at a full-service agency. You get that same standard of work, without the agency markup.',
+        outcome: 'A site that loads in under 2 seconds, looks sharp on every screen, and turns visitors into paying clients around the clock.',
+        tags: ['Next.js', 'React', 'TailwindCSS', 'AI-Integrated'],
+        from: 'From $800',
     },
     {
         index: '02',
@@ -65,7 +65,7 @@ export default function ServicesSection() {
     const inView = useInView(ref, { once: true, margin: '-80px' })
 
     return (
-        <section id='our-services' ref={ref} className="hjk relative bg-fixed bg-gray-50 py-24 px-8 font-dm-sans">
+        <section id="our-services" ref={ref} className="hjk relative bg-fixed bg-gray-50 py-24 px-8 font-dm-sans">
             <div className="absolute inset-0 backdrop-blur-xl w-full" />
             <div className="mx-auto relative">
                 {/* Header */}

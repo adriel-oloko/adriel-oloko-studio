@@ -30,7 +30,7 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-    const finalUrl = 'https:/adrielolokostudios.vercel.app'
+    const finalUrl = 'https:/adrielolokostudio.vercel.app'
     return (
         <>
             <Head>

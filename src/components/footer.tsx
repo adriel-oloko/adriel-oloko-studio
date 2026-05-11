@@ -2,7 +2,7 @@ import { MailIcon } from 'lucide-react'
 
 export default function Footer() {
     return (
-        <footer id={'f'} className="bg-transparent py-12 relative z-10">
+        <footer id={'f'} className="bg-transparent py-12 relative z-10 text-white">
             <div className="mx-auto max-w-container px-4 md:px-8 relative flex flex-col w-full justify-between">
                 <div className="flex flex-col gap-2 items-center justify-between lg:flex-row">
                     <div className="flex items-center justify-start md:justify-center overflow-visible dark-mode order-first h-7 shrink-0 lg:order-0">
