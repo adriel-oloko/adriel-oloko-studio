@@ -49,6 +49,8 @@ export default function App({ Component, pageProps }: AppProps) {
                 <meta name="twitter:title" content="Adriel Oloko Studio | Web Design & Development Agency" />
                 <meta name="twitter:description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
                 <meta name="twitter:image" content={`${finalUrl}/api/og`} />
+
+                <meta name="google-site-verification" content="9UvLq4B0RleKE9W7_67kK5c5X5xiRt70GmNwho9oXfY" />
             </Head>
 
             <main className={`${playfairDisplay.variable} ${bebasNeue.variable} ${cormorantGaramond.variable} ${inter.variable} ${jetBrainsMono.variable}`}>
