@@ -1,12 +1,12 @@
 import AboutSection from '@/components/about-section'
 import CTASection from '@/components/cta-section'
+import FindingsSection from '@/components/findings-section'
 import Footer from '@/components/footer'
 import HeroSection from '@/components/hero-section'
 import { LoaderOverlay } from '@/components/loader-overlay'
 import PortfolioSection from '@/components/portfolio-section'
 import ProcessSection from '@/components/process-section'
 import ServicesSection from '@/components/services-section'
-import Testimonials from '@/components/testimonials'
 import useIpAddress from '@/hooks/useIpAddress'
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
             <ServicesSection />
             <PortfolioSection />
             <ProcessSection />
-            <Testimonials />
+            <FindingsSection />
             <div className="hjk bg-fixed relative">
                 {/* Subtle noise overlay */}
                 <div

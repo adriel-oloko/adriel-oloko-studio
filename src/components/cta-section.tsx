@@ -92,7 +92,7 @@ export default function CTASection() {
     }
 
     return (
-        <section ref={ref} className="bg-transparent relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-28 md:py-36">
+        <section id="contact" ref={ref} className="bg-transparent relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-28 md:py-36">
             {/* Ambient glow */}
             <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-175 md:w-full h-125 rounded-full bg-white opacity-[0.025] blur-[120px]" />
 
@@ -102,12 +102,12 @@ export default function CTASection() {
                     <motion.div variants={fadeUp} className="mb-8 flex items-center gap-3">
                         <span className="inline-block w-2 h-2 rounded-full bg-white opacity-60" />
                         <span className="text-xs uppercase tracking-[0.25em] text-white/40" style={{ fontFamily: 'var(--font-jet-brains-mono)' }}>
-                            Start a project
+                            Get in touch
                         </span>
                     </motion.div>
                     {/* Headline */}
                     <motion.h2 variants={fadeUp} className="text-5xl capitalize md:text-6xl lg:text-7xl font-light text-white leading-[1.05] tracking-tight mb-6" style={{ fontFamily: 'var(--font-cormorant-garamond)' }}>
-                        Let&apos;s build something great.
+                        Let&apos;s build something on-chain.
                     </motion.h2>
                     {/* Divider */}
                     <motion.div variants={lineVariant} className="h-px md:hidden bg-white/10 mb-8 origin-left" />
@@ -115,7 +115,7 @@ export default function CTASection() {
                 <div className="">
                     {/* Reassurance copy */}
                     <motion.p variants={fadeUp} className="text-sm text-white/40 leading-relaxed mb-12 max-w-sm" style={{ fontFamily: 'var(--font-dm-sans)' }}>
-                        No long-term contracts. No upfront commitment. Just a free call to see if we&apos;re a good fit.
+                        Open to full-time blockchain engineer roles and Web3 contract work. No pressure, no jargon. Just a real conversation about your stack.
                     </motion.p>
 
                     {/* Form */}
@@ -128,7 +128,7 @@ export default function CTASection() {
                             <FieldRow label="Email" name="email" type="email" placeholder="your@email.com" value={form.email} focused={focused} onChange={handleChange} onFocus={() => setFocused('email')} onBlur={() => setFocused(null)} />
 
                             {/* Project */}
-                            <TextAreaRow label="Project" name="project" placeholder="Tell me about your project" value={form.project} focused={focused} onChange={handleChange} onFocus={() => setFocused('project')} onBlur={() => setFocused(null)} />
+                            <TextAreaRow label="What are you building?" name="project" placeholder="Your protocol, dapp, or the role you are hiring for" value={form.project} focused={focused} onChange={handleChange} onFocus={() => setFocused('project')} onBlur={() => setFocused(null)} />
 
                             {/* Submit */}
                             <motion.div variants={fadeUp} className="mt-10">

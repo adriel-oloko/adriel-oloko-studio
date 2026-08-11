@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-07T00:00:00Z",
+  "title": "Design System: Adriel Oloko Studio",
+  "extensions": {
+    "colorMeta": {
+      "signal-orange": { "role": "primary", "displayName": "Signal Orange", "canonical": "#f97316", "tonalRamp": ["#371a05", "#6d330b", "#b04a04", "#ea6306", "#f98432", "#fba76c", "#f6cbad", "#fcede3"] },
+      "amber-warm": { "role": "secondary", "displayName": "Amber Warm", "canonical": "#d97706", "tonalRamp": ["#372005", "#6d3f0b", "#af6004", "#e98006", "#f99d32", "#fab96c", "#f6d4ad", "#fcf0e3"] },
+      "amber-badge": { "role": "secondary", "displayName": "Amber Badge", "canonical": "#fef3c7", "tonalRamp": ["#2c2410", "#57481f", "#8a722a", "#b79d38", "#cdb95e", "#dbd28c", "#e6e1bd", "#f6f4e8"] },
+      "espresso": { "role": "secondary", "displayName": "Espresso", "canonical": "#2c1a0e", "tonalRamp": ["#2c1b11", "#573721", "#89502b", "#b66b3a", "#cc8b5f", "#daac8d", "#e5cdbd", "#f6eee8"] },
+      "espresso-ink": { "role": "secondary", "displayName": "Espresso Ink", "canonical": "#1a1208", "tonalRamp": ["#2c2010", "#573f21", "#8a5f2a", "#b77f38", "#cd9c5e", "#dbb88c", "#e6d4bd", "#f6f0e8"] },
+      "warm-cream": { "role": "neutral", "displayName": "Warm Cream", "canonical": "#f5f0eb", "tonalRamp": ["#271e15", "#4d3c2b", "#785a3c", "#a07850", "#b99673", "#ccb39a", "#ded1c5", "#f4efeb"] },
+      "stage-black": { "role": "neutral", "displayName": "Stage Black", "canonical": "#121212", "tonalRamp": ["#1e1e1e", "#3c3c3c", "#5a5a5a", "#787878", "#969696", "#b3b3b3", "#d1d1d1", "#efefef"] },
+      "process-black": { "role": "neutral", "displayName": "Process Black", "canonical": "#0e0e0e", "tonalRamp": ["#1e1e1e", "#3c3c3c", "#5a5a5a", "#787878", "#969696", "#b3b3b3", "#d1d1d1", "#efefef"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#ffffff", "tonalRamp": ["#1e1e1e", "#3c3c3c", "#5a5a5a", "#787878", "#969696", "#b3b3b3", "#d1d1d1", "#efefef"] },
+      "mist": { "role": "neutral", "displayName": "Mist", "canonical": "#fafaf9", "tonalRamp": ["#20201c", "#414137", "#626252", "#83836d", "#9f9f8c", "#babaad", "#d5d5ce", "#f0f0ee"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "#f5f5f4", "tonalRamp": ["#1f1f1d", "#3e3e3a", "#5e5e56", "#7d7d72", "#9b9b91", "#b7b7b0", "#d3d3d0", "#f0f0ef"] },
+      "stone-muted": { "role": "neutral", "displayName": "Stone Muted", "canonical": "#a8a29e", "tonalRamp": ["#201e1d", "#3f3b39", "#5f5955", "#7e7671", "#9b9490", "#b8b3af", "#d3d1cf", "#f0efee"] },
+      "stone-body": { "role": "neutral", "displayName": "Stone Body", "canonical": "#78716c", "tonalRamp": ["#1f1e1d", "#3f3c39", "#5f5955", "#7e7771", "#9b9590", "#b7b3b0", "#d3d1cf", "#f0efef"] },
+      "stone-heading": { "role": "neutral", "displayName": "Stone Heading", "canonical": "#1c1917", "tonalRamp": ["#211e1c", "#413b37", "#635851", "#83756c", "#a0948b", "#bbb2ac", "#d5d1ce", "#f0efee"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline and CTA headline only. A 300-weight variant carries the CTA." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles across all sections." },
+      "title": { "displayName": "Title", "purpose": "Card titles: service names, portfolio project names." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs, max 65-75ch. Inter is the loaded body font; DM Sans is declared but not loaded." },
+      "label": { "displayName": "Label", "purpose": "Eyebrows, section markers, stats captions. Uppercase, wide tracking." }
+    },
+    "shadows": [
+      { "name": "card-glow", "value": "0 25px 50px -12px rgba(120, 53, 15, 0.2)", "purpose": "Testimonial carousel card only. Amber-tinted ambient lift." },
+      { "name": "badge-lift", "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1)", "purpose": "Small floating badges over imagery." }
+    ],
+    "motion": [
+      { "name": "ease-out-quart", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Default easing for all entrances and transitions (framer-motion ease array [0.22, 1, 0.36, 1])." },
+      { "name": "duration-short", "value": "200ms", "purpose": "Button, nav, and state transitions." },
+      { "name": "duration-standard", "value": "550ms", "purpose": "Section entrances, carousel slides." },
+      { "name": "duration-focus-line", "value": "500ms", "purpose": "Input underline grow on focus." },
+      { "name": "carousel-interval", "value": "5000ms", "purpose": "Testimonial autoplay interval." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Hero Get Started CTA. Signal Orange spotlight, compact.",
+      "html": "<button class=\"ds-btn-primary\">Get Started</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #f97316; color: #ffffff; font-family: 'Inter', Arial, sans-serif; font-size: 0.9375rem; font-weight: 500; padding: 16px 16px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.2s; } .ds-btn-primary:hover { background: #ea580c; } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Services quote and portfolio visit. Stage Black, sharp 4px corner.",
+      "html": "<button class=\"ds-btn-dark\">Get a quote</button>",
+      "css": ".ds-btn-dark { display: inline-flex; align-items: center; justify-content: center; background: #121212; color: #ffffff; font-family: 'Inter', Arial, sans-serif; font-size: 0.9375rem; font-weight: 600; padding: 16px 10px; border: none; border-radius: 4px; cursor: pointer; transition: background 0.2s, transform 0.2s; } .ds-btn-dark:hover { background: #44403c; } .ds-btn-dark:active { transform: scale(0.98); } .ds-btn-dark:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }"
+    },
+    {
+      "name": "Light Submit Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "CTA Send message. Paper on the dark stage, square, arrow slides on hover.",
+      "html": "<button class=\"ds-btn-light\">Send message <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 7h12M7.5 1.5L13 7l-5.5 5.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-btn-light { display: inline-flex; align-items: center; gap: 12px; background: #ffffff; color: #121212; font-family: 'Inter', Arial, sans-serif; font-size: 0.9375rem; font-weight: 500; letter-spacing: 0.02em; padding: 16px 32px; border: none; border-radius: 0; cursor: pointer; transition: background 0.3s, transform 0.2s; } .ds-btn-light svg { transition: transform 0.3s; } .ds-btn-light:hover { background: rgba(255, 255, 255, 0.9); } .ds-btn-light:hover svg { transform: translateX(4px); } .ds-btn-light:active { transform: scale(0.98); } .ds-btn-light:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }"
+    },
+    {
+      "name": "Underline Input",
+      "kind": "input",
+      "refersTo": "input-underline",
+      "description": "Floating label, hairline bottom, white line grows on focus.",
+      "html": "<div class=\"ds-input-wrap\"><input id=\"ds-name\" class=\"ds-input-underline\" type=\"text\" placeholder=\" \" /><label class=\"ds-input-label\" for=\"ds-name\">Name</label></div>",
+      "css": ".ds-input-wrap { position: relative; border-bottom: 1px solid rgba(255, 255, 255, 0.1); } .ds-input-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; height: 1px; width: 0; background: #ffffff; transition: width 0.5s; } .ds-input-wrap:focus-within::after { width: 100%; } .ds-input-underline { width: 100%; background: transparent; border: none; outline: none; padding: 28px 0 12px; color: rgba(255, 255, 255, 0.8); font-family: 'Inter', Arial, sans-serif; font-size: 0.9375rem; } .ds-input-label { position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.25); font-family: 'Inter', Arial, sans-serif; font-size: 0.9375rem; pointer-events: none; transition: all 0.3s; } .ds-input-underline:focus ~ .ds-input-label, .ds-input-underline:not(:placeholder-shown) ~ .ds-input-label { top: 12px; transform: none; font-size: 0.75rem; } .ds-input-wrap:focus-within .ds-input-label { color: rgba(255, 255, 255, 0.45); }"
+    },
+    {
+      "name": "Service Tag",
+      "kind": "chip",
+      "refersTo": "chip-tag",
+      "description": "Service and stack tags on cards.",
+      "html": "<span class=\"ds-chip\">Next.js</span>",
+      "css": ".ds-chip { display: inline-block; background: #fafaf9; color: #78716c; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; padding: 4px 10px; border: 1px solid #f5f5f4; border-radius: 4px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Numbered service card: title, tagline, outcome arrow, tags, price + CTA.",
+      "html": "<div class=\"ds-card-service\"><span class=\"ds-card-index\">01</span><h3 class=\"ds-card-title\">Website Development</h3><p class=\"ds-card-tagline\">Not a brochure. A business tool that works while you sleep.</p><p class=\"ds-card-outcome\"><span class=\"ds-card-arrow\">&#8594;</span> A site that loads in under 2 seconds and turns visitors into paying clients.</p><div class=\"ds-card-foot\"><span class=\"ds-card-price\">From $800</span><button class=\"ds-card-cta\">Get a quote</button></div></div>",
+      "css": ".ds-card-service { background: #ffffff; border: 1px solid #f5f5f4; border-radius: 6px; padding: 24px; display: flex; flex-direction: column; gap: 16px; transition: border-color 0.3s; } .ds-card-service:hover { border-color: #e7e5e4; } .ds-card-index { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 0.15em; color: #d6d3d1; } .ds-card-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 600; color: #1c1917; margin: 0; } .ds-card-tagline { font-style: italic; font-size: 0.75rem; color: #a8a29e; margin: 0; } .ds-card-outcome { display: flex; gap: 8px; font-size: 0.875rem; font-weight: 500; color: #44403c; line-height: 1.4; margin: 0; } .ds-card-arrow { color: #d6d3d1; } .ds-card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; } .ds-card-price { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #a8a29e; } .ds-card-cta { background: #121212; color: #ffffff; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer; transition: background 0.2s; } .ds-card-cta:hover { background: #44403c; }"
+    },
+    {
+      "name": "Nav Pill Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Contact Me pill in the hero navigation.",
+      "html": "<a class=\"ds-nav-pill\" href=\"#\">Contact Me</a>",
+      "css": ".ds-nav-pill { display: inline-block; color: #ffffff; font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; text-decoration: none; padding: 6px 12px; border: 1.5px solid #ffffff; border-radius: 9999px; transition: background 0.2s, color 0.2s; } .ds-nav-pill:hover { background: rgba(255, 255, 255, 0.1); } .ds-nav-pill:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Spotlight Stage",
+    "overview": "The site is a stage. The hero drops you into a dark, animated theater: one confident voice in Cormorant Garamond, one spotlight of Signal Orange, and JetBrains Mono stage directions whispering what is happening. The rest of the show alternates acts: dark cinematic surfaces (process, the contact stage) against warm editorial daylight (services, portfolio, the testimonials lounge). Nothing here is a template with a name swapped in. The design itself is the portfolio piece, which is the whole pitch: this is a website that proves the person who built it can build websites. The system explicitly rejects generic SaaS templates (centered hero, three identical feature cards, blue gradient CTA), agency cliche (stock hero photos, \"full-service digital agency\" filler), portfolio cliche (a grid of identical screenshot cards with no point of view), and plain, forgettable, visually quiet work. Every section funnels toward the contact path while still reading as craft to a hiring manager.",
+    "keyCharacteristics": [
+      "Expressive editorial serif display (Cormorant Garamond) carrying the voice; mono labels annotate the structure",
+      "Dark cinematic sections alternate with warm light sections; never a flat single-mood page",
+      "One spotlight accent, Signal Orange, used with scarcity",
+      "Signature gestures: outlined text strokes, italic serif interjections, inline circular image embeds in the hero",
+      "Warm near-blacks everywhere, never pure #000; warm browns in the testimonials lounge"
+    ],
+    "rules": [
+      { "name": "The Spotlight Rule", "body": "Signal Orange appears on no more than 5% of any given screen. Its rarity is the point: when it shows up, it is the only thing asking for the click.", "section": "colors" },
+      { "name": "The Warm Dark Rule", "body": "Near-black surfaces are never pure #000. They carry warmth (#0e0e0e, #121212) or brown (#2c1a0e). If a dark surface looks cold, it is wrong.", "section": "colors" },
+      { "name": "The Mono Annotation Rule", "body": "Labels, eyebrows, and section markers are always JetBrains Mono, uppercase, tracked wide. Never set a label in the serif. The serif performs, the mono documents.", "section": "typography" },
+      { "name": "The Unused Font Rule", "body": "Playfair Display, Bebas Neue, Syne, and Space Grotesk are loaded or declared but used nowhere. Prune them; unused fonts are dead weight on the page.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. Shadows appear only where the system names them. If a card needs a shadow to separate from its background, the tonal layering is wrong.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do set every display and heading in Cormorant Garamond, and every label in JetBrains Mono uppercase with wide tracking.",
+      "Do alternate dark cinematic sections with warm light sections; a single-mood page reads as template.",
+      "Do keep Signal Orange rare, no more than 5% of any screen.",
+      "Do use warm near-blacks (#0e0e0e, #121212, #2c1a0e), never pure #000.",
+      "Do keep cards flat with Hairline borders; reserve shadows for the two named cases.",
+      "Do give every interactive element a visible focus state, and honor prefers-reduced-motion by calming entrances and pausing the carousel.",
+      "Do use the established easing curve cubic-bezier(0.22, 1, 0.36, 1) with durations between 200ms and 600ms for all motion."
+    ],
+    "donts": [
+      "Don't look like a generic SaaS template: no Inter-everything centered hero, no three identical feature cards, no blue gradient CTA.",
+      "Don't use agency cliche: no stock hero photos, no \"we are a full-service digital agency\" filler, no jargon.",
+      "Don't use the portfolio cliche: no grid of identical screenshot cards with no point of view. The site must feel authored and expressive.",
+      "Don't be plain and boring. If a screen could pass for a default template, it has failed.",
+      "Don't use gradient text, side-stripe borders, or decorative glassmorphism.",
+      "Don't ship unused fonts (Playfair, Bebas Neue, Syne, Space Grotesk) or reference unloaded fonts (DM Sans). Resolve the font stack.",
+      "Don't use pure #000 or #fff for surfaces; tint everything warm."
+    ]
+  }
+}

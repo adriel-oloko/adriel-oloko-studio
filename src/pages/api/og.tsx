@@ -21,8 +21,8 @@ export default function handler() {
                     gap: 16,
                     textAlign: 'center',
                 }}>
-                <p style={{ color: '#b8965a', fontSize: 64, letterSpacing: '0.3em', textTransform: 'uppercase' }}>Adriel Oloko Studio:</p>
-                <p style={{ color: '#b8965a', fontSize: 48, fontWeight: 700, textTransform: 'uppercase', textAlign: 'center' }}>Web Design & Development Agency</p>
+                <p style={{ color: '#b8965a', fontSize: 64, letterSpacing: '0.3em', textTransform: 'uppercase' }}>Adriel Oloko:</p>
+                <p style={{ color: '#b8965a', fontSize: 48, fontWeight: 700, textTransform: 'uppercase', textAlign: 'center' }}>Blockchain & Full-Stack Engineer</p>
             </div>,
             { width: 1200, height: 630 }
         )

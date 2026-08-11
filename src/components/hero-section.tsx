@@ -2,18 +2,11 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { MenuIcon, StarIcon, XIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import StatsBar from './StatsBar'
-import useIpAddress from '@/hooks/useIpAddress'
 import { useRouter } from 'next/router'
 
 export default function HeroSection() {
-    const { city, region_code } = useIpAddress()
-
-    useEffect(() => {
-        console.log(city, region_code, typeof city)
-    }, [city, region_code])
-
     return (
         <section id="hjk" className="hjk bg-fixed w-full min-h-svh md:min-h-screen relative flex items-center justify-center bg-black px-4">
             <NavBar />
@@ -21,31 +14,21 @@ export default function HeroSection() {
             <div className="xl:w-4/5 md:px-4 items-center flex flex-col gap-2 md:gap-4">
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} className="flex md:hidden items-center w-fit mx-auto gap-1.5 bg-gray-900 text-white text-xs font-medium px-3 py-1 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />
-                    Available for New Projects
+                    Open to blockchain engineer roles
                 </motion.div>
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} className="flex items-center gap-1.5 text-white text-4xl lg:text-7xl text-center font-cormorant-garamond! font-bold px-3 py-1 rounded-full">
                     <h2 className="capitalize leading-8 md:leading-16">
-                        Premium
+                        Blockchain
                         <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-2 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx.png")' }} />
-                        Web Development <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">for</span>
+                        engineering,<br />
+                        <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">shipped</span> end to end
                         <span className="bg-white min-h-6 md:min-h-10 min-w-12 md:min-w-20 rounded-full mx-4 inline-block bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url("../../Image_fx (1).png")' }} />{' '}
-                        {city && city !== 'Unknown' && region_code ? (
-                            <>
-                                businesses based in <br />
-                                <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">
-                                    {city}, {region_code}.
-                                </span>
-                            </>
-                        ) : (
-                            <>
-                                <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">ambitious</span> businesses, <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">worldwide.</span>
-                            </>
-                        )}
+                        <span className="text-stroke-[0.5px] text-transparent font-inter italic lg:text-6xl text-stroke-white">with craft.</span>
                     </h2>
                 </motion.div>
-                <p className="text-center my-2 md:my-0 px-8 md:w-1/2 text-white">I build fast, professional websites for trade businesses and local companies. Clean design, real results, no fluff.</p>
+                <p className="text-center my-2 md:my-0 px-8 md:w-1/2 text-white">I build launchpads, dapps, and the Web3 interfaces that talk to them. Smart contracts verified against live chains, frontend shipped with craft.</p>
                 <div className="border-2 p-1 rounded-[14px] my-2 border-white">
-                    <button className="bg-orange-500 w-fit px-4 py-1.5 rounded-lg mx-auto text-white">Get Started</button>
+                    <a href="#projects" className="bg-orange-500 w-fit px-4 py-1.5 rounded-lg mx-auto text-white block">View my work</a>
                 </div>
                 <div className="hidden grid-cols-2 mx-auto w-fit gap-4 mt-8 md:mt-4">
                     <div className="flex -space-x-3 justify-end border-r pr-4">
@@ -76,9 +59,9 @@ export function NavBar() {
     const navData = [
         [
             ['About', '#about'],
-            ['Our Services', '#our-services'],
+            ['What I do', '#our-services'],
             ['Projects', '#projects'],
-            ['Testimonial', '#testimonials'],
+            ['Findings', '#findings'],
         ],
     ]
     return (

@@ -4,28 +4,28 @@ import { useState } from 'react'
 const steps = [
     {
         number: '01',
-        title: 'Discovery',
-        body: 'We start with a focused conversation about your goals, audience, and vision. You share what you need, and I ask the right questions so nothing gets missed.',
+        title: 'Audit',
+        body: 'I start by reading the protocol as it actually behaves, not as the docs describe it: ABIs, deployment history, version skews, disabled feature paths. Undocumented behavior gets documented before anything is built.',
     },
     {
         number: '02',
         title: 'Design',
-        body: 'I translate your ideas into clean wireframes and a visual direction. You review, give feedback, and we align before a single line of code is written.',
+        body: 'I lay out the contract surface and the interface together: data flow, wallet paths, gas-sensitive routes. You review, give feedback, and we align before a single line of code is written.',
     },
     {
         number: '03',
-        title: 'Development',
-        body: 'I build your site with precision, using modern tools that are fast and maintainable. You get regular progress updates so you are never left in the dark.',
+        title: 'Build',
+        body: 'I write and integrate contracts and the dapp that talks to them, using modern tools that are fast and maintainable. You get regular progress updates so you are never left in the dark.',
     },
     {
         number: '04',
-        title: 'Review',
-        body: 'You test the live preview and share any final changes. We go through every detail together until the result matches exactly what you envisioned.',
+        title: 'Verify',
+        body: 'I verify against the live chain, not a local fork: revert paths, feature flags, edge cases, and version skews. The verification suite stays green or it does not ship.',
     },
     {
         number: '05',
-        title: 'Launch',
-        body: 'Your site goes live with zero stress on your end. I handle deployment, final checks, and hand over everything you need to manage it confidently.',
+        title: 'Ship',
+        body: 'Deployment, final checks, and handover. The integration is live, monitored, and you have everything you need to manage it confidently.',
     },
 ]
 
@@ -38,7 +38,7 @@ export default function ProcessSection() {
         <section className="w-full bg-[#0e0e0e] py-20 px-6 sm:px-8 lg:px-16">
             {/* Section Label */}
             <p className="text-xs font-semibold tracking-[0.18em] uppercase text-[#a0a0a0] mb-3">How I Work</p>
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-12 leading-tight font-cormorant-garamond capitalize">A clear process, no surprises.</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-12 leading-tight font-cormorant-garamond capitalize">A rigorous process, no surprises.</h2>
 
             {/* Two-column layout: mobile stacks (image top, steps bottom), desktop side by side */}
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">

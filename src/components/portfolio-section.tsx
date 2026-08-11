@@ -6,22 +6,22 @@ import Link from 'next/link'
 const projects = [
     {
         index: '01',
-        name: 'Astoria Caterers',
-        clientType: 'Food & Hospitality',
-        category: 'Website Development',
-        summary: `The client had no online presence. Customers couldn't find them, couldn't book, and couldn't see their menu. We built a clean, fast website that gave them a professional digital front door. Inquiries started coming in the week it launched.`,
-        url: 'https://astoria-caterers.vercel.app',
-        tags: ['Next.js', 'TailwindCSS', 'SEO', 'Booking Flow'],
-        metric: 'From zero to online',
-        accentColor: '#d97706',
-        image: 'Facebook post - 1.png',
+        name: 'Web3 Token Launchpad',
+        clientType: 'Private DeFi Client',
+        category: 'Smart Contracts + Web3 UI',
+        summary: `Two live launchpad portals for a private client, unnamed by choice: contracts, permit-based sell flows, and interfaces wired to live RPC. Found version skews and disabled feature paths on both portals before they cost users a cent.`,
+        url: 'https://github.com/adriel-oloko',
+        tags: ['Solidity', 'EVM', 'Next.js', 'TypeScript'],
+        metric: 'Verified green against live RPC',
+        accentColor: '#f97316',
+        image: 'pools-launchpad.png',
     },
     {
         index: '02',
         name: 'Zurvia',
         clientType: 'DeFi / Web3 Startup',
-        category: 'Website Development',
-        summary: `This client needed a site that explained a complex service in plain language and made new visitors trust them fast. We stripped away the jargon and built something that converts visitors into leads.`,
+        category: 'Web3 Frontend',
+        summary: `A DeFi startup needed a site that explained a complex protocol in plain language and earned trust from day one. Built as a fast Next.js landing page with Web3-native positioning that converts visitors into leads.`,
         url: 'https://zurvia.vercel.app',
         tags: ['Next.js', 'Web3 UI', 'DeFi', 'Landing Page'],
         metric: 'Clarity for two audiences',
@@ -32,10 +32,10 @@ const projects = [
         index: '03',
         name: 'Crest Point Bank',
         clientType: 'Bank',
-        category: 'Website Development',
-        summary: `The client's old site looked nothing like the calibre of work they actually delivered. We rebuilt it from the ground up. The new site now matches the quality of their service and positions them to attract the clients they actually want.`,
+        category: 'Frontend / Product Build',
+        summary: `The client's old site looked nothing like the calibre of work they actually delivered. I rebuilt it from the ground up so the digital front door finally matched the service behind it, and positioned the bank to attract the clients it actually wants.`,
         url: 'https://crestpointbank.com',
-        tags: ['Next.js', 'Brand Positioning', 'Corporate', 'SEO'],
+        tags: ['Next.js', 'Corporate', 'Finance', 'SEO'],
         metric: 'Premium positioning unlocked',
         accentColor: '#16a34a',
         image: 'crestpointbank.png',
@@ -87,7 +87,7 @@ export default function PortfolioSection() {
                     </motion.h2>
 
                     <motion.p variants={headingVariants} className="mt-3 text-sm text-stone-400 max-w-sm leading-relaxed">
-                        Each project solves a specific business problem. Screenshots are secondary. Results are not.
+                        Each project solves a specific problem. Screenshots are secondary. Live deployments and verified results are not.
                     </motion.p>
 
                     <motion.div variants={headingVariants} className="w-full h-px bg-stone-100 mt-4" />
@@ -111,9 +111,9 @@ export default function PortfolioSection() {
 
                 {/* Footer note */}
                 <motion.div variants={headingVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="mt-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8 border-t border-stone-100">
-                    <p className="text-sm text-stone-400">Full case studies available on request.</p>
+                    <p className="text-sm text-stone-400">Client launchpad work is unnamed by choice. Sanitized repos and case studies on request.</p>
                     <a href="mailto:adrielloks@gmail.com" className="text-sm font-medium text-stone-900 underline underline-offset-4 hover:text-stone-600 transition-colors">
-                        Discuss your project
+                        Let&apos;s talk about your stack
                     </a>
                 </motion.div>
             </div>

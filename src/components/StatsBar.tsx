@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion'
 
 const STATS = [
-    { value: '60+', label: 'projects delivered' },
-    { value: '100%', label: 'on-time delivery' },
-    { value: '$800', label: 'websites start from' },
+    { value: '2+', label: 'launchpads shipped' },
+    { value: '5+', label: 'protocols integrated' },
+    { value: '100%', label: 'verification green on live RPC' },
 ]
 
 const fadeUp = {

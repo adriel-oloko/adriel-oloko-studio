@@ -4,31 +4,31 @@ import { motion, useInView } from 'framer-motion'
 const services = [
     {
         index: '01',
-        title: 'Website Development',
-        tagline: 'Not a brochure. A business tool that works while you sleep.',
-        description: 'I build fast, responsive websites that use AI to handle customer enquiries, qualify leads, and respond after hours. Before going independent, I ran the web and design department at a full-service agency. You get that same standard of work, without the agency markup.',
-        outcome: 'A site that loads in under 2 seconds, looks sharp on every screen, and turns visitors into paying clients around the clock.',
-        tags: ['Next.js', 'React', 'TailwindCSS', 'AI-Integrated'],
-        from: 'From $800',
+        title: 'Smart Contract Engineering',
+        tagline: 'Contracts that move money without surprises.',
+        description: 'I build and ship EVM smart contracts: launchpad factories, tokens, and permit-based sell flows. I find version skews and disabled feature paths before they cost users, and I verify against live RPCs, not just local mocks.',
+        outcome: 'Deployed, verified contracts with tests green against the live chain.',
+        tags: ['Solidity', 'EVM', 'Hardhat', 'Gas Optimization'],
+        from: 'Contract & full-time',
     },
     {
         index: '02',
-        title: 'Graphic Design',
-        tagline: 'Visuals that make people stop scrolling.',
-        description: 'I create brand visuals, social graphics, and marketing assets that communicate clearly and look polished. No templates, no shortcuts.',
-        outcome: 'A consistent visual identity that builds trust before you say a word.',
-        tags: ['Branding', 'Social Assets', 'Print', 'UI Graphics'],
-        from: 'From $50',
+        title: 'Web3 Frontend Development',
+        tagline: 'The interface is part of the product, not an afterthought.',
+        description: 'I build dapps and Web3 interfaces that talk to contracts directly: wallet flows, live chain state, precise ABI handling, clean UI. Same craft as this site, pointed at your protocol.',
+        outcome: 'A Web3 frontend that ships with the contracts and stays honest about chain state.',
+        tags: ['Next.js', 'React', 'TypeScript', 'Web3 UI'],
+        from: 'Contract & full-time',
     },
 
     {
         index: '03',
-        title: 'Social Media Management',
-        tagline: 'Consistent presence. Measurable growth.',
-        description: 'I handle content planning, design, and scheduling so your brand stays active and relevant without you lifting a finger.',
-        outcome: 'A content calendar that keeps your audience engaged and your brand top of mind every week.',
-        tags: ['Content Strategy', 'Scheduling', 'Analytics', 'Copywriting'],
-        from: 'From $400/mo',
+        title: 'Protocol Integration & Verification',
+        tagline: 'Undocumented behavior, documented and shipped against.',
+        description: 'I reverse-engineer protocols and integrate them before the docs catch up: version-skew detection, chunked RPC scans, feature-flag discovery, verification scripts that run against live chains.',
+        outcome: 'Integrations that stay green against the live chain, not a fork.',
+        tags: ['RPC Tooling', 'Reverse Engineering', 'Verification', 'TypeScript'],
+        from: 'Contract & full-time',
     },
 ]
 
@@ -71,13 +71,13 @@ export default function ServicesSection() {
                 {/* Header */}
                 <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="mb-14">
                     <motion.p variants={headerVariants} viewport={{ once: true, margin: '-40px' }} className="text-xs tracking-widest uppercase text-stone-400 mb-3 font-jet-brains-mono">
-                        Services
+                        Capabilities
                     </motion.p>
                     <motion.h2 variants={headerVariants} viewport={{ once: true, margin: '-40px' }} className="text-3xl sm:text-4xl md:text-5xl font-bold capitalize text-stone-100 leading-tight" style={{ fontFamily: 'var(--font-cormorant-garamond), serif' }}>
-                        What I can do for you
+                        What I can ship for you
                     </motion.h2>
                     <motion.p variants={headerVariants} viewport={{ once: true, margin: '-40px' }} className="mt-3 text-sm text-stone-400 max-w-sm leading-relaxed">
-                        Clear services. Defined value. No guesswork about whether I am the right fit for your project.
+                        Clear capabilities. Defined value. No guesswork about whether I am the right fit for your team.
                     </motion.p>
                 </motion.div>
 
@@ -116,17 +116,17 @@ export default function ServicesSection() {
                                     </div>
                                 </div>
 
-                                {/* Right: price + CTA */}
+                                {/* Right: status + CTA */}
                                 <div className="flex items-center justify-between gap-4 shrink-0">
                                     <div className="flex flex-col items-start gap-0.5">
                                         <span className="text-xs text-stone-400 tracking-widest uppercase" style={{ fontFamily: 'var(--font-jet-brains-mono), monospace' }}>
-                                            Starting
+                                            Open to
                                         </span>
                                         <span className="text-sm font-semibold text-stone-900 whitespace-nowrap">{service.from}</span>
                                     </div>
-                                    <button className="text-xs font-semibold tracking-wide text-white bg-stone-900 hover:bg-stone-700 active:scale-95 transition-all duration-200 px-4 py-2.5 whitespace-nowrap" style={{ borderRadius: '4px' }}>
-                                        Get a quote
-                                    </button>
+                                    <a href="#contact" className="text-xs font-semibold tracking-wide text-white bg-stone-900 hover:bg-stone-700 active:scale-95 transition-all duration-200 px-4 py-2.5 whitespace-nowrap" style={{ borderRadius: '4px' }}>
+                                        Let&apos;s talk
+                                    </a>
                                 </div>
                             </div>
                         </motion.div>
@@ -135,7 +135,7 @@ export default function ServicesSection() {
 
                 {/* Footer note */}
                 <motion.p initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : { opacity: 0 }} transition={{ delay: 0.9, duration: 0.5 }} className="mt-8 text-xs text-stone-300 text-center tracking-wide" style={{ fontFamily: 'var(--font-jet-brains-mono), monospace' }}>
-                    All packages are scoped per project. Custom bundles available on request.
+                    Client work is unnamed by choice. Sanitized case studies and repos available on request.
                 </motion.p>
             </div>
         </section>

@@ -34,20 +34,20 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>Adriel Oloko Studio | Web Design & Development Agency</title>
-                <meta name="description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
+                <title>Adriel Oloko | Blockchain & Full-Stack Engineer</title>
+                <meta name="description" content="Adriel Oloko is a blockchain and full-stack engineer building launchpads, dapps, and Web3 interfaces end to end. Smart contracts verified against live chains, frontend shipped with craft." />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Adriel Oloko Studio | Web Design & Development Agency" />
-                <meta property="og:description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
+                <meta property="og:title" content="Adriel Oloko | Blockchain & Full-Stack Engineer" />
+                <meta property="og:description" content="Adriel Oloko is a blockchain and full-stack engineer building launchpads, dapps, and Web3 interfaces end to end. Smart contracts verified against live chains, frontend shipped with craft." />
                 <meta property="og:image" content={`${finalUrl}/api/og`} />
                 <meta property="og:url" content={finalUrl} />
 
                 {/* Twitter/X Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Adriel Oloko Studio | Web Design & Development Agency" />
-                <meta name="twitter:description" content="Adriel Oloko Studio builds clean, conversion-focused websites for small businesses. Web design, development, and digital presence, done right." />
+                <meta name="twitter:title" content="Adriel Oloko | Blockchain & Full-Stack Engineer" />
+                <meta name="twitter:description" content="Adriel Oloko is a blockchain and full-stack engineer building launchpads, dapps, and Web3 interfaces end to end. Smart contracts verified against live chains, frontend shipped with craft." />
                 <meta name="twitter:image" content={`${finalUrl}/api/og`} />
 
                 <meta name="google-site-verification" content="9UvLq4B0RleKE9W7_67kK5c5X5xiRt70GmNwho9oXfY" />
